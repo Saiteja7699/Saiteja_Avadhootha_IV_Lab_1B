@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <title> 
+
+        This HTML document  demonstrates using javascript to create html elements and set their attributes
+
+        </title> 
+
+    </head>
+
+<body>
+
+<script>
+
+// Your javascript program goes here to create the elements and set  the element attributes
+var H1 = document.createElement("h1");
+H1.innerHTML = "Demonstrating Headings";
+var H2 = document.createElement("h2");
+H2.innerHTML = "ITCS 5121: Information Visualization (Spring '23)";
+
+var H3 = document.createElement("h3");
+H3.innerHTML = "Lab 1B: Demonstrating Elements of HTML Language using JavaScript";
+
+var H4 = document.createElement("h4");
+H4.innerHTML = "Kalpathi Subramanian, Jan 1, 2023";
+
+var HPara = document.createElement("h1");
+HPara.innerHTML = "Demonstrating Paragraphs";
+var Para = document.createElement("p");
+Para.innerHTML = "Here is a paragraph; it uses &ltp&gt tag; paragraphs will start a new line and ignore spaces, linebreaks and number of lines depends on the window size";
+
+var HAtr = document.createElement("h1");
+HAtr.innerHTML = "Demonstrating Attributes";
+var Atr = document.createElement("p");
+Atr.innerHTML = "The src attribute can point to a hyperlink such as ";
+var Atag = document.createElement("a")
+Atag.href = "https://www.w3schools.com";
+Atag.innerHTML = "W3Schools";
+Atr.append(Atag);
+
+var text = document.createElement("p");
+text.innerHTML = "or to an image using the 'src' attribute as follows:";
+
+var Img = document.createElement("img");
+Img.src = "w3.png";
+
+var HPCol = document.createElement("h1");
+HPCol.innerHTML = "Demonstrating colored text with a tooltip";
+var HPcolText = document.createElement("p");
+HPcolText.innerHTML = "The is a green line with a tooltip set using the 'title' attribute and colored using the 'color' attribute";
+HPcolText.style.color = "green";
+HPcolText.title = "This has a tooltip";
+
+var HCF = document.createElement("h1");
+HCF.innerHTML = "Demonstrating Colors, Fonts";
+var HCFText1 = document.createElement("p");
+HCFText1.innerHTML = "You can set the text or background color using the 'color' and 'background-color' attributes";
+var HCFText2 = document.createElement("p");
+HCFText2.innerHTML = "An example of line illustrating background and text colors";
+HCFText2.style.color = "black";
+HCFText2.style.backgroundColor = "red";
+
+var HList = document.createElement("h1");
+HList.innerHTML = "Demonstrating Lists";
+var HListText1 = document.createElement("p");
+HListText1.innerHTML = "An example of ordered list:";
+
+var OL = document.createElement("ol");
+let li1 = document.createElement('li');
+li1.innerHTML = 'Item 1';
+li1.style.color = "green";
+let li2 = document.createElement('li');
+li2.innerHTML = 'Item 2';
+li2.style.color = "green";
+
+OL.appendChild(li1);
+OL.appendChild(li2);
+
+var HListText2 = document.createElement("p");
+HListText2.innerHTML = "An example of unordered list with bold font at 24px size:";
+HListText2.style.fontSize = "24px";
+HListText2.style.fontWeight = "bold";
+HListText2.style.color = "#FF00FF";
+
+var UL = document.createElement("ul");
+let li3 = document.createElement('li');
+li3.innerHTML = 'Item 1';
+li3.style.color = "red";
+let li4 = document.createElement('li');
+li4.innerHTML = 'Item 2';
+li4.style.fontSize = "20px";
+li4.style.color = "red";
+
+UL.appendChild(li3);
+UL.appendChild(li4);
+
+document.body.append(
+    H1,
+    H2,
+    H3,
+    H4,
+    HPara,
+    Para,
+    HAtr,
+    Atr,
+    text,
+    Img,
+    HPCol,
+    HPcolText,
+    HCF,
+    HCFText1,
+    HCFText2,
+    HList,
+    HListText1,
+    OL,
+    HListText2,
+    UL
+);
+
+</script>
+
+</body>
+
+</html>
